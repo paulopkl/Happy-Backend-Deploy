@@ -19,7 +19,6 @@ export default {
     async show(req: Request, res: Response) {
         const id = req.params;
         const orphanagesRepository = getRepository(Orphanage);
-
         
         const orphanage = await orphanagesRepository.findOneOrFail(id, {
             relations: ['images']
@@ -27,6 +26,15 @@ export default {
             
         return res.json(orphanageView.render(orphanage));
     },
+
+    // async remove(req: Request, res: Response) {
+    //     const id = req.params;
+        
+    //     const orphanagesRepository = getRepository(Orphanage);
+    //     const orphanage = await orphanagesRepository.createQueryBuilder().softDelete();
+
+    //     return res.json({ message: 'Sucesso' });
+    // },
 
     async create(req: Request, res: Response) {
 
