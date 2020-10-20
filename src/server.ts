@@ -12,8 +12,8 @@ import errorHandler from './Errors/handler';
 
 const app = express();
 
-app.use(cors());
 // app.use(cors({ origin: 'https://happy-app-frontend.netlify.app' }));
+app.use(cors());
 
 app.use(express.json());
 
