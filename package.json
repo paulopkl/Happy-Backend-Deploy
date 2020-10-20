@@ -8,9 +8,9 @@
     "start": "node dist/src/server.js",
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
     "build": "tsc",
-    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
-    "migrations:run": "ts-node ./node_modules/typeorm/cli.js migrations:run",
-    "migrations:revert": "ts-node ./node_modules/typeorm/cli.js migrations:revert"
+    "typeorm": "node ./node_modules/typeorm/cli.js",
+    "migrations:run": "node ./node_modules/typeorm/cli.js migrations:run",
+    "migrations:revert": "node ./node_modules/typeorm/cli.js migrations:revert"
   },
   "keywords": [],
   "license": "ISC",
