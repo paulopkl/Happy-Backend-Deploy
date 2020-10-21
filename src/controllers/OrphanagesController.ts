@@ -88,9 +88,9 @@ export default {
         console.log(orphanage);
     
         await orphanageRepository.save({ ...orphanage })
-            // .catch(err => res.json(err))
+            .then(result => console.log(result))
+            .catch(err => res.json(err));
             
         return res.status(201).json(orphanage);
-    
     }
 }
