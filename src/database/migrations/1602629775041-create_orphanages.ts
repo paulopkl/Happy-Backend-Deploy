@@ -26,6 +26,10 @@ export class createOrphanages1602629775041 implements MigrationInterface {
                     type: 'varchar',
                 },
                 {
+                    name: 'whatsapp',
+                    type: 'varchar'
+                },
+                {
                     name: 'about',
                     type: 'text'
                 },
@@ -33,10 +37,6 @@ export class createOrphanages1602629775041 implements MigrationInterface {
                     name: 'instructions',
                     type: 'text'
                 },
-                // {
-                //     name: 'whatssap',
-                //     type: 'integer',
-                // },
                 {
                     name: 'opening_hours',
                     type: 'varchar'
@@ -51,6 +51,6 @@ export class createOrphanages1602629775041 implements MigrationInterface {
     }
 
     public async down(queryRunner: QueryRunner): Promise<void> {
-        return await queryRunner.dropTable('orphanages');
+        await queryRunner.dropTable('orphanages');
     }
 }

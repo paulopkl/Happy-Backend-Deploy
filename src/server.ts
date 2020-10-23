@@ -3,8 +3,6 @@ import cors from 'cors';
 import path from 'path';
 import 'dotenv/config';
 import 'express-async-errors';
-
-// import bodyParser from 'body-parser';
 import './database/connection';
 
 import routes from './routes';

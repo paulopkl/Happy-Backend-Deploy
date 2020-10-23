@@ -43,6 +43,7 @@ export default {
             latitude, 
             longitude, 
             about, 
+            whatsapp,
             instructions, 
             opening_hours,
             open_on_weekends 
@@ -59,6 +60,7 @@ export default {
             latitude,
             longitude, 
             about, 
+            whatsapp,
             instructions, 
             opening_hours, 
             open_on_weekends: open_on_weekends === 'true',
@@ -70,6 +72,7 @@ export default {
             latitude: Yup.number().required('Latitude é Obrigatório!'),
             longitude: Yup.number().required('Longitude é Obrigatório!'),
             about: Yup.string().required('Descrição é Obrigatório!').max(300),
+            whatsapp: Yup.string().required('Whatsapp é Obrigatório!').min(11).max(11),
             instructions: Yup.string().required('Instruções são Obrigatórias!'),
             opening_hours: Yup.string().required('Nome é Obrigatório!'),
             open_on_weekends: Yup.boolean().required(),
