@@ -1,14 +1,17 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
+  <img width="1000" height="600" src="/src/assets/Model github.png" alt="Project logo"></a>
 </p>
 
-<h3 align="center">backend</h3>
+<h1 align="center">API: 
+  <a href="https://happy-app-backend.herokuapp.com/" target="_blank">[Project]</a>
+</h1>
+<h3 align="center">Happy Backend API.</h3>
+
 
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
@@ -16,99 +19,79 @@
 
 ---
 
-<p align="center"> Few lines describing your project.
-    <br> 
+<p align="center"> 
+  Este é um projeto totalmente funcional que permite que qualquer instuição ou pessoa possa cadastrar um 
+  ponto no mapa onde seria um orfanato, e qualquer pessoa pode entrar em contato via WhatsApp já podendo
+  ter uma rota traçada automaticamente.
+  <br />
+</p>
+<p align="center"> 
+  (This is a fully functional project that allows any institution or person to register a
+   point on the map where it would be an orphanage, and anyone can get in touch via WhatsApp
+   have a route plotted automatically.)
+  <br />
 </p>
 
-## 📝 Table of Contents
+## 📝 Tabela de Conteúdos (Table of Contents)
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Deployment](#deployment)
-- [Usage](#usage)
-- [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
-- [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
+- [Sobre (About)](#about)
+- [Começando (Getting Started)](#getting_started)
+- [Construido com (Built Using)](#built_using)
+- [Autores (Authors)](#authors)
 
-## 🧐 About <a name = "about"></a>
+## 🧐 Sobre (About) <a name="about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+Este projeto foi desenvolvido durante a semana "Next Level Week #03" da Rocketseat.
+Foram desenvolvidos do zero a API feita em NodeJS + TypeScript, juntando o typeorm para construir as 
+migrations em SQLite. Você pode conferir em: <a href="https://happy-app-backend.herokuapp.com/" target="_blank">https://happy-app-backend.herokuapp.com/<a> 
 
-## 🏁 Getting Started <a name = "getting_started"></a>
+Foi desenvolvido tambem o Frontend Web com ReactJS + TypeScript e a biblioteca para
+mapas Leaflet. Você pode conferir em: <a href="happy-app-frontend.netlify.app/" target="_blank">happy-app-frontend.netlify.app/<a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+Foi desenvolvido também o App Mobile Multiplataforma feito em React-Native + TypeScript. Você pode conferir o repositório e gerar o APK em: <a href="https://github.com/paulopkl/Happy-Mobile-Deploy" target="_blank">https://github.com/paulopkl/Happy-Mobile-Deploy</a>
 
-### Prerequisites
+(This project was developed during Rocketseat's "Next Level Week # 03" week. The API made in NodeJS + TypeScript was developed from scratch, joining the typeorm to build the migrations in SQLite. You can check it out at: <a href="https://happy-app-backend.herokuapp.com/" target="_blank">https://happy-app-backend.herokuapp.com/<a>
 
-What things you need to install the software and how to install them.
+The Frontend Web was also developed with ReactJS + TypeScript and the library for Leaflet maps. You can check it out at: <a href="happy-app-frontend.netlify.app/" target="_blank">happy-app-frontend.netlify.app/<a>
 
-```
-Give examples
-```
+The Multiplatform Mobile App made in React-Native + TypeScript was also developed. You can check the repository and generate the APK at: <a href="https://github.com/paulopkl/Happy-Mobile-Deploy" target="_blank">https://github.com/paulopkl/Happy-Mobile-Deploy</a>.)
 
-### Installing
+## 🏁 Inicio (Getting Started) <a name="getting_started"></a>
 
-A step by step series of examples that tell you how to get a development env running.
+### Pré-requisitos (Prerequisites)
 
-Say what the step will be
+Git instado no sistema.
+(Git Commando line installed.)
 
 ```
-Give the example
+git clone https://github.com/paulopkl/Happy-Backend-Deploy
 ```
 
-And repeat
+### Instalação (Installing)
+
+Entre na pasta do projeto e siga os passos abaixo.
+(Enter the project folder and follow the steps below)
+
+Instalar Dependências: (Install Dependêncies:)
 
 ```
-until finished
+npm install
 ```
 
-End with an example of getting some data out of the system or using it for a little demo.
-
-## 🔧 Running the tests <a name = "tests"></a>
-
-Explain how to run the automated tests for this system.
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+Rodar Servidor web: (Run web server:)
 
 ```
-Give an example
+npm run build && npm start
 ```
 
-### And coding style tests
+Aprecie o projeto em localhost:3333. (Enjoy the project in localhost:3333.)
 
-Explain what these tests test and why
+## ⛏️ Construido usando (Built Using) <a name="built_using"></a>
 
-```
-Give an example
-```
+- [NodeJS](https://nodejs.org/en/) - NodeJS
+- [TypeScript](https://www.typescriptlang.org/) - TypeScript
+- [TypeORM](https://typeorm.io/#/) - TypeORM
 
-## 🎈 Usage <a name="usage"></a>
+## ✍️ Autores (Authors) <a name="authors"></a>
 
-Add notes about how to use the system.
-
-## 🚀 Deployment <a name = "deployment"></a>
-
-Add additional notes about how to deploy this on a live system.
-
-## ⛏️ Built Using <a name = "built_using"></a>
-
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
-
-## ✍️ Authors <a name = "authors"></a>
-
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
-
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
-
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+- [@paulopkl](https://github.com/paulopkl) - Idéia e Trabalho Inicial (Idea & Initial work)
